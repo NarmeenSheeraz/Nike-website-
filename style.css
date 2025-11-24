@@ -1,0 +1,204 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #E5E5E5;
+    box-sizing: border-box;
+
+}
+header{
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.head-container{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 1000px;
+    align-items: center;
+}
+.headlogo img{
+    width:80px;
+    position: relative;
+    top: 10px;
+}
+
+.headlogo{
+    vertical-align: middle;
+}
+
+.text1, .text2{
+    color: #ff8367;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.text2{
+    color: black !important;
+}
+
+.nav-ul ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 420px;
+    padding: 0;
+    font-size: 20px;
+    color: gray;
+}
+
+.header-bottom{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.head-left{
+    /* background-color: aquamarine; */
+}
+
+.head-left img{
+    width: 550px;
+    height: auto;
+}
+
+.head-right{
+    height: 350px;
+    position: relative;
+    left: 20px;
+    top: 40px;
+}
+
+.heading h2{
+    font-size: 50px;
+    color: #ff8367;
+}
+.heading2{
+    color: #363958 !important;
+}
+
+.head-para{
+    font-size: 20px;
+}
+
+.head-btn button {
+    background: rgba(0, 0, 255, 0.74);
+    padding: 12px 26px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+
+}
+.head-btn i{
+    position: relative;
+    right: 6px;
+}
+
+.cont1-head{
+    width: 1190px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #2d2f49;
+}
+.container1{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 1200px;
+}
+
+.shoe-card{
+background-color: white;   
+width: 350px; 
+border-radius: 30px;
+padding: 10px;
+}
+
+.shoe-img img{
+      width: 350px;
+      height: 350px;
+}
+
+.shoe-img{
+    background-color: #F1F1F1;
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.shoe-dis{
+    width: 350px;
+}
+
+.shoe-dis h1{
+    color: #363958;
+}
+
+.shoe-dis p{
+    font-size: 18px;
+}
+
+.price-main{
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+}
+
+.price{
+    font-size: 26px;
+    font-weight: bold;
+    color:#ff8367;
+}
+
+.shoe-btn button{
+    padding: 10px !important;
+     width: 100px;
+     font-size: 12px;
+}
+
+.container2{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 1200px;
+    margin-top: 60px;
+}
+
+.cont2-left1{
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 550px;
+    border-radius: 20px;
+    margin: 20px;
+    /* padding: 10px 40px; */
+}
+
+.cont2-left1-img img{
+    width: 80px;
+}
+
+.cont2-right img{
+    width: 600px;
+    margin-top: 40px;
+}
+
+.cont2-left1-cont h3{
+  color: #2d2f49;
+  font-size: 20px;
+}
+
+.cont2-left1-cont{
+    color: #2d2f49;
+}
