@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -50,21 +54,26 @@ header{
     color: gray;
 }
 
+.nav-1{
+    color: black;
+}
+
 .header-bottom{
     display: flex;
     background-color: white;
     justify-content: center;
     align-items: center;
-    padding-top: 60px;
+    padding-top: 0px;
+    height: 650px;
 }
 
-.head-left{
-    /* background-color: aquamarine; */
-}
+
 
 .head-left img{
     width: 550px;
     height: auto;
+    position: relative;
+    right: 70px;
 }
 
 .head-right{
@@ -117,7 +126,7 @@ header{
 
 .shoe-card{
 background-color: white;   
-width: 350px; 
+width: 370px; 
 border-radius: 30px;
 padding: 10px;
 }
@@ -136,7 +145,12 @@ padding: 10px;
 }
 
 .shoe-dis{
-    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;height: 200px;
+    margin: auto;
+    /* background-color: aqua; */
 }
 
 .shoe-dis h1{
@@ -144,13 +158,20 @@ padding: 10px;
 }
 
 .shoe-dis p{
+    position: relative;
+    bottom: 20px;
     font-size: 18px;
+}
+
+.main-s{
+    position: relative;
+    bottom: 15px;
 }
 
 .price-main{
     display: flex;
     justify-content: space-between;
-    width: 340px;
+    width: 290px;
 }
 
 .price{
@@ -201,4 +222,246 @@ padding: 10px;
 
 .cont2-left1-cont{
     color: #2d2f49;
+}
+
+.container3{
+    width: 1150px;
+    border-radius: 20px;
+    margin: auto;
+    background-color: white;
+    padding: 50px;
+    margin-top: 70px;
+}
+
+.container3 h3{
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+    font-size: 30px;
+    color:  #2d2f49;
+}
+
+.sub{
+    width: 1030px;
+    margin: auto;
+    position: relative;
+    bottom: 10px;
+}
+
+.sub input{
+       width: 900px;
+       padding: 10px;
+}
+
+.sub button{
+    padding: 12px;
+    background-color: rgb(64, 64, 247);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    position: relative;
+    right: 20px;
+}
+
+footer{
+    background-color: #ffffffef;
+    margin-top: 60px;
+}
+
+.foot-container{
+    display: flex;
+    justify-content: space-between;
+    width: 1150px;
+    margin: auto;
+     padding: 30px 0px 30px 0px;
+
+}
+
+.row{
+    color: #2d2f49;
+}
+
+.foot-bottom{
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+.foot-bottom span{
+    color: #ff8367;
+}
+
+@media  (max-width: 1200px) {
+    .container1{ 
+    width: 900px;
+}
+
+.cont1-head{
+    width: 900px;
+}
+
+.head-container{
+    width: 930px !important;
+}
+
+.header-bottom{
+    width: 100% !important;
+    height: auto !important;
+    padding: 60px 0px 60px 0px !important;
+}
+
+.head-left img{
+    width: 400px;
+    margin-left: 50px;
+}
+
+
+
+.heading h2{
+    font-size: 40px;
+}
+
+.shoe-card{
+width: 250px; 
+
+}
+
+.shoe-img{
+    width: 240px;
+    height: 240px;
+    overflow: hidden;
+}
+
+.shoe-img img{
+    width: 250px;
+    height: 240px;
+}
+
+.shoe-dis{
+    width: 240px;height: 200px;
+    margin: auto;
+    /* background-color: aqua; */
+}
+
+.shoe-dis h1{
+   font-size: 22px;
+}
+
+.shoe-dis p{
+    font-size: 16px;
+}
+
+.price-main{
+        width: 240px;
+}
+
+.price{
+    font-size: 26px;
+    font-weight: bold;
+    color:#ff8367;
+}
+
+.shoe-btn button{
+    padding: 10px !important;
+     width: 100px;
+     font-size: 12px;
+}
+
+.container2{
+    width: 940px;
+    margin-top: 80px;
+
+}
+
+.cont2-left1{
+    
+    width: 450px;
+
+}
+
+.cont2-left1-img img{
+    width: 65px;
+}
+
+.cont2-right img{
+    width: 400px;
+    margin-top: 80px;
+}
+
+.cont2-left1-cont h3{
+  color: #2d2f49;
+  font-size: 20px;
+}
+
+.cont2-left1-cont{
+    color: #2d2f49;
+}
+
+}
+
+@media (max-width: 992px){
+    .head-container{
+        width: 710px !important;
+        height: 70px;
+    }
+
+    .nav-ul ul{
+        gap: 20px;
+        font-size: 16px;
+    }
+
+    .heading h2{
+        font-size: 40px;
+    }
+
+    .head-left img{
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px){
+    .nav-ul ul{
+        display: none;  /* hide menu (optional) */
+    }
+
+    .head-container{
+        justify-content: space-between;
+    }
+
+    .header-bottom{
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding-top: 120px;
+    }
+
+    .heading h2{
+        font-size: 32px;
+    }
+
+    .head-para{
+        font-size: 16px;
+    }
+
+    .head-btn button{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px){
+    .headlogo img{
+        width: 50px;
+    }
+
+    .text1, .text2{
+        font-size: 16px;
+    }
+
+    .heading h2{
+        font-size: 28px;
+    }
+
+    .head-left img{
+        width: 300px;
+    }
 }
