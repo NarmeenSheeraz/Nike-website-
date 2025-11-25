@@ -9,6 +9,15 @@ body{
     box-sizing: border-box;
 
 }
+
+.navbar-toggle{
+    display: none;
+}
+
+button{
+    cursor: pointer;
+}
+
 header{
     background-color: rgb(255, 255, 255);
     position: fixed;
@@ -21,7 +30,7 @@ header{
     display: flex;
     justify-content: space-between;
     margin: auto;
-    width: 1000px;
+    width: 1160px;
     align-items: center;
 }
 .headlogo img{
@@ -265,7 +274,7 @@ padding: 10px;
 
 footer{
     background-color: #ffffffef;
-    margin-top: 60px;
+    margin-top: 90px;
 }
 
 .foot-container{
@@ -290,9 +299,19 @@ footer{
     color: #ff8367;
 }
 
+.contact {
+    position: fixed;
+    /* width: 40px; */
+    bottom: 40px;
+    right:  30px;
+}
+
+
+
 @media  (max-width: 1200px) {
     .container1{ 
     width: 900px;
+
 }
 
 .cont1-head{
@@ -301,12 +320,13 @@ footer{
 
 .head-container{
     width: 930px !important;
+    
 }
 
 .header-bottom{
     width: 100% !important;
     height: auto !important;
-    padding: 60px 0px 60px 0px !important;
+    padding: 80px 0px 80px 0px !important;
 }
 
 .head-left img{
@@ -321,7 +341,7 @@ footer{
 }
 
 .shoe-card{
-width: 250px; 
+width: 280px; 
 
 }
 
@@ -329,11 +349,13 @@ width: 250px;
     width: 240px;
     height: 240px;
     overflow: hidden;
+    margin: auto;
 }
 
 .shoe-img img{
     width: 250px;
     height: 240px;
+    
 }
 
 .shoe-dis{
@@ -367,7 +389,7 @@ width: 250px;
 }
 
 .container2{
-    width: 940px;
+    width: 900px;
     margin-top: 80px;
 
 }
@@ -396,72 +418,332 @@ width: 250px;
     color: #2d2f49;
 }
 
+.container3{
+    width: 900px;
+    
 }
 
-@media (max-width: 992px){
+.sub{
+    width: 850px;
+}
+
+.sub input{
+       width: 700px;
+}
+
+.foot-container{
+    width: 900px;
+  }
+}
+
+@media  (max-width: 992px) {
+
     .head-container{
-        width: 710px !important;
-        height: 70px;
+        width: 750px !important;
+    }
+
+    header{
+        padding: 10px 0;
     }
 
     .nav-ul ul{
-        gap: 20px;
-        font-size: 16px;
+        width: 350px;
+        font-size: 18px;
+    }
+    
+
+    .header-bottom{
+        width: 100% !important;
+        justify-content: space-evenly !important;
+    }
+
+    .head-left img{
+        width: 300px;
+        right: 0;
+        margin-bottom: 30px;
     }
 
     .heading h2{
-        font-size: 40px;
+        font-size: 36px;
+    }
+
+    .cont1-head{
+        width: 750px;
+    }
+    .container1{
+        width: 750px;
+    }
+
+    .shoe-card{
+        width: 230px;
+        padding: 10px;
+    }
+
+    .shoe-img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .shoe-img img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .shoe-dis{
+        width: 200px;
+    }
+
+    .price-main{
+        width: 200px;
+    }
+
+    /* container2 */
+    .container2{
+        width: 750px;
+    }
+
+    .cont2-left1{
+        width: 320px;
+        padding:  05px;
+    }
+    .cont2-left1-cont p{
+  font-size: 12px;
+    }
+
+    .cont2-left1-img img{
+        width: 45px;
+    }
+
+    .cont2-right img{
+        width: 350px;
+    }
+
+    /* container3 */
+    .container3{
+        width: 750px;
+    }
+
+    .sub{
+        width: 700px;
+    }
+
+    .sub input{
+        width: 550px;
+    }
+
+    .foot-container{
+        width: 750px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Header */
+    .head-container{
+        width: 90% !important;
+       }
+    .navbar-toggle{
+        display: block !important;
+    }
+
+    .nav-ul{
+       display: none; 
+    }
+    .cont1-head{
+        width: 90%;
+    }
+
+    /* Hero */
+    .header-bottom{
+        flex-direction: column;
+        padding: 40px 0;
+        height: auto;
     }
 
     .head-left img{
         width: 400px;
     }
+
+    .heading h2{
+        font-size: 46px;
+    }
+
+    /* container1 */
+    .container1{
+        width: 90%;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .shoe-card{
+        width: 260px;
+    }
+
+    /* container2 */
+    .container2{
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .cont2-left1{
+        width: 400px;
+        gap: 10px;
+    }
+
+    .cont2-right img{
+        width: 320px;
+    }
+
+    /* container3 */
+    .container3{
+        width: 90%;
+    }
+
+    .sub{
+        width: 430px;
+    }
+
+    .sub input{
+        width: 320px;
+    }
+
+
+    /* footer */
+    .foot-container{
+        width: 400px ;
+        flex-wrap: wrap;
+        gap: 20px;
+        text-align: center;
+    }
 }
 
-@media (max-width: 768px){
-    .nav-ul ul{
-        display: none;  /* hide menu (optional) */
-    }
+@media (max-width: 578px) {
 
+    /* Header */
     .head-container{
-        justify-content: space-between;
+        width: 90% !important;
     }
 
+    .nav-ul{
+        display: none; 
+    }
+
+    .navbar-toggle{
+        display: block !important;
+    }
+
+    /* Hero Section */
     .header-bottom{
         flex-direction: column;
-        text-align: center;
+        padding: 40px 0;
         height: auto;
-        padding-top: 120px;
-    }
-
-    .heading h2{
-        font-size: 32px;
-    }
-
-    .head-para{
-        font-size: 16px;
-    }
-
-    .head-btn button{
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 480px){
-    .headlogo img{
-        width: 50px;
-    }
-
-    .text1, .text2{
-        font-size: 16px;
-    }
-
-    .heading h2{
-        font-size: 28px;
+        align-items: center !important;
+        text-align: center;
     }
 
     .head-left img{
         width: 300px;
+        right: 0;
+        margin-bottom: 20px;
+    }
+
+    .head-right{
+        width: 350px;
+        margin: auto;
+        left: 0px !important;
+    }
+
+    .heading h2{
+        font-size: 38px;
+    }
+
+    /* =====================
+         CONTAINER 1 – CARDS
+       ===================== */
+    .container1{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .shoe-card{
+        width: 360px !important;
+    }
+
+    .shoe-img{
+        width: 330px !important;
+        height: 360px !important;
+    }
+
+    .shoe-img img{
+        width: 340px !important;
+        height: 360px !important;
+        object-fit: cover;
+    }
+
+    .shoe-dis{
+        width: 330px !important;
+    }
+
+    .shoe-dis h1{
+        font-size: 26px;
+    }
+
+    .price-main{
+        width: 320px !important;
+    }
+
+    .shoe-btn button{
+        width: 120px !important;
+        font-size: 14px;
+    }
+
+    /* =====================
+         CONTAINER 2
+       ===================== */
+    .container2{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .cont2-left1{
+        width: 360px;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .cont2-right img{
+        width: 300px;
+    }
+
+    /* =====================
+         CONTAINER 3 – SUBSCRIBE
+       ===================== */
+    .container3{
+        width: 90%;
+    }
+
+    .sub{
+        width: 320px;
+       
+
+    }
+
+    .sub input{
+        width: 190px;
+    }
+
+
+    .foot-container{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
     }
 }
