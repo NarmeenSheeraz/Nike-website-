@@ -446,6 +446,11 @@ width: 280px;
         padding: 10px 0;
     }
 
+
+    .head-right{
+         width: 330px;
+    }
+
     .nav-ul ul{
         width: 350px;
         font-size: 18px;
@@ -562,6 +567,10 @@ width: 280px;
 
     .head-left img{
         width: 400px;
+    }
+
+.head-right {
+        height: auto;
     }
 
     .heading h2{
